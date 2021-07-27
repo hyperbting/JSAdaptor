@@ -11,5 +11,6 @@ Put xrspace_apiadaptor.js in a proper location
 ```
 import {getItems} from './js/xrspace_apiadaptor.js';
 
-let resp = getItems("api end point", succ, fail);
+// "SpaceName", Ttem Limit : int
+let resp = getItems("SpaceName", 10, succ, fail);
 ```
