@@ -11,10 +11,10 @@ function fail()
 }
 
 //correct: {"items":[...]}
-let resp = getItems("https://mocki.io/v1/699e1707-e60e-4028-88dd-bbdd831f2b09", succ, fail);
+let resp = getItems("normal", 100, succ, fail);
 
 //empty: {}
-let resp2 = getItems("https://mocki.io/v1/3b29cb85-eb52-4b27-9645-d964c869354c", succ, fail);
+let resp2 = getItems("empty", 0, succ, fail);
 
-//non-exist: 404 for http status 
-let resp3 = getItems("https://mocki.io/v1/notexist", succ, fail);
+//non-exist: 404 from http status 
+let resp3 = getItems("notexist", 100, succ, fail);
