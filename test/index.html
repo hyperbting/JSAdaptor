@@ -9,23 +9,7 @@
 
 </head>
 
-<body>
-  <script type="module" src="./js/xrspace_apiadaptor.js"></script>
-  <script type="module">
-	import { getItems } from  "./js/xrspace_apiadaptor.js";
-	let resp = getItems(
-		"https://mocki.io/v1/699e1707-e60e-4028-88dd-bbdd831f2b09", 
-		(resp) =>{ console.log( "html:" + resp ); },
-		() =>{ console.log( "html: failed" ); }
-	);
-	
-	let resp2 = getItems(
-		"https://mocki.io/v1/699e1707-e60e-4028-88dd-bbdd831f2b09ERROR", 
-		(resp) =>{ console.log( "html:" + resp ); },
-		() =>{ console.log( "html: failed" ); }
-	);
-  </script>  
-  
+<body>  
   <script type="module" src="./js/sample_user.js"></script>
 </body>
 </html>
