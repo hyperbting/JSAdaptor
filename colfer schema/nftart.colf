@@ -1,0 +1,21 @@
+package jsadaptor
+
+type nftart struct {
+	productId int64
+	title text
+	description text
+	placeNo int64
+	rawUrl text
+	coverUrl text
+	mediaType text
+	rawSize int64
+	specification text
+	creator nftPersonal
+	owner nftPersonal
+}
+
+type nftPersonal struct {
+	avatarUrl text
+	nickName text
+	description text	
+}

@@ -1,0 +1,5 @@
+package jsadaptor
+
+type response struct {
+	items []nftart
+}
